@@ -1,35 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[5]:
-
-
+import random
 def primary():
   print("Keep it logically awesome.")
-
-
-# In[6]:
-
-
-#f = open("quotes.txt")
-#quotes = f.readlines()
-#f.close()
-
-
-# In[7]:
-
-
-#print(quotes)
-
-
-# In[11]:
-
-
+  f = open("quotes.txt")
+  quotes = f.readlines()
+  f.close()
+  last=len(quotes)-1
+  rnd=random.randint(0,last)
+  print(quotes[rnd])
 if __name__== "__main__":
   primary()
-
-
-# In[ ]:
 
 
 
